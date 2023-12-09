@@ -5,6 +5,8 @@ deepgram-sdk==2.12.0
 frozenlist==1.4.0
 idna==3.6
 multidict==6.0.4
+PyAudio==0.2.13
+pydub==0.25.1
 python-dotenv==1.0.0
 websockets==12.0
 yarl==1.9.4
