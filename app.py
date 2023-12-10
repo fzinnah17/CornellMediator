@@ -1,6 +1,6 @@
 import gradio as gr
-from llm import create_emo_agent
-from transcribe import transcribe_audio
+from scripts.llm import create_emo_agent
+from scripts.transcribe import transcribe_audio
 
 # TODO
 background = "I am Morgan and have been working at IBM for the past 5 years Taylor joined the \
@@ -18,9 +18,8 @@ def run(audio):
     # while not stop_button_pressed:
     caller_response = transcribe_audio(audio)
     emo_agent_response = conversation({"question": caller_response})
-    response = emo_agent_response["text"]
-    print(response)
-    return response
+
+    return emo_agent_response["text"]
 
 demo = gr.Interface(
     run,
