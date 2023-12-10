@@ -1,10 +1,77 @@
-# Yoda
+# Yoda: Conversation Co-Pilot
 
-API stack:
-HugginFace Gradle
-Whisper
-TogetherAI
-LangChain
+This repository contains the code for Yoda, a Conversation Co-Pilot application that utilizes Gradio for audio transcription and response generation based on OpenAI models.
 
-### future work
-including a vector database to store entire conversation, for the LLM to reference back to if needed, along with the summarized chat history and most recent dialogue.
+## Table of Contents
+
+- [About](#about)
+- [Features](#features)
+- [API Stack](#api-stack)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Future Work](#future-work)
+- [Contributing](#contributing)
+- [License](#license)
+
+## About
+
+Yoda is a Conversation Co-Pilot that assists users in transcribing spoken audio and generating context-aware, polite, and assertive responses to facilitate workplace conversations.
+
+## Features
+
+- Audio transcription using OpenAI's Whisper ASR model.
+- Response generation for workplace scenarios using OpenAI's GPT-based models.
+- Real-time interaction through Gradio's user-friendly interface.
+
+## Stack
+
+- Hugging Face (HugginFace) for transformer models
+- Whisper for Automatic Speech Recognition (ASR)
+- TogetherAI for collaborative features
+- LangChain for language processing
+
+## Prerequisites
+
+Ensure you have the following prerequisites installed before using Yoda:
+
+- Python 
+- Gradio
+- Transformers library
+- OpenAI API key
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/app.py.git
+###
+
+Install the required dependencies:
+###
+pip install -r requirements.txt
+###
+# env.py
+OPENAI_API_KEY = "your-api-key-here"
+Run Yoda, the Conversation Co-Pilot:
+python app.py
+
+Usage
+Launch Yoda by running the provided command.
+Speak into the microphone to trigger audio transcription.
+Experience real-time, context-aware response generation based on workplace scenarios.
+
+python app.py
+
+Future Work
+The future work for Yoda, the Conversation Co-Pilot, includes:
+
+Implementing a vector database to store entire conversations.
+Allowing the Language Model (LLM) to reference back to the stored conversations.
+Summarizing chat history and providing access to the most recent dialogue.
+Contributing
+If you'd like to contribute to Yoda, the Conversation Co-Pilot, please follow the guidelines outlined in the CONTRIBUTING.md file.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
