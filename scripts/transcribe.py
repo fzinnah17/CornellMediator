@@ -1,9 +1,7 @@
 from transformers import pipeline
 import numpy as np
 import os
-from openai import OpenAI
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 transcriber = pipeline("automatic-speech-recognition", model="openai/whisper-base.en")
 
