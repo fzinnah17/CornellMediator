@@ -4,9 +4,9 @@ import numpy as np
 import os
 from openai import OpenAI
 from scripts.llm import create_emo_agent
+from env import OPENAI_API_KEY
 
 # client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-OPENAI_API_KEY = "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"
 
 client = OpenAI(api_key=OPENAI_API_KEY)
 
