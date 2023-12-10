@@ -1,4 +1,4 @@
-# CornellMediator
+# Yoda
 
 API stack:
 HugginFace Gradle
