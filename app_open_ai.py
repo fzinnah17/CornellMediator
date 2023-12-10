@@ -3,9 +3,11 @@ from transformers import pipeline
 import numpy as np
 import os
 from openai import OpenAI
-from scripts.llm import create_emo_agent
+from env import OPENAI_API_KEY
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 transcriber = pipeline("automatic-speech-recognition", model="openai/whisper-base.en")
 background = "I am Morgan and have been working at IBM for the past 5 years Taylor joined the \

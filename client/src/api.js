@@ -1,14 +1,23 @@
-export const getTestMessage = async () => {
+export const sendAudioToBackend = async (audioData) => {
     try {
-      const response = await fetch('http://localhost:5000/api/test');
+      const formData = new FormData();
+      formData.append('file', audioData);
+  
+      const response = await fetch('http://localhost:7860/api/predict/', {
+        method: 'POST',
+        mode: 'cors',
+        body: formData,
+      });
+  
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
+  
       const data = await response.json();
-      return data.message;
+      return data;
     } catch (error) {
-      console.error(error);
-      return "Error fetching data";
+      console.error('Error in sending audio to backend:', error);
+      return null;
     }
   };
   
