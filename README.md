@@ -46,13 +46,12 @@ Ensure you have the following prerequisites installed before using Yoda:
 
    ```bash
    git clone https://github.com/fzinnah17/Yoda
-###
 
 Install the required dependencies:
 ###
 pip install -r requirements.txt
 ###
-# env.py
+env.py
 OPENAI_API_KEY = "your-api-key-here"
 Run Yoda, the Conversation Co-Pilot:
 python app.py
