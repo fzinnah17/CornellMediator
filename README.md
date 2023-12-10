@@ -1,7 +1,9 @@
 # CornellMediator
 
 API stack:
-Deepgram
+HugginFace Gradle
+Whisper
+TogetherAI
 LangChain
 
 ### future work

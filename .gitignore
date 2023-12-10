@@ -1,4 +1,8 @@
 .venv
 scripts/dummy_run.py
 scripts/cohere.py
+venv
+__pycache__/
+*.pyc
 .env
+.DS_Store
