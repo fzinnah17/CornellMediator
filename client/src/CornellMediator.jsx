@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { sendAudioToBackend } from './api';
 import './css/CornellMediator.css';
 
 export const CornellMediator = () => {

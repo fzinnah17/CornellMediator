@@ -5,6 +5,7 @@ export const sendAudioToBackend = async (audioData) => {
   
       const response = await fetch('http://localhost:7860/api/predict/', {
         method: 'POST',
+        mode: 'cors',
         body: formData,
       });
   
