@@ -1,3 +1,4 @@
+
 # Yoda: Conversation Co-Pilot
 
 This repository contains the code for Yoda, a Conversation Co-Pilot application that utilizes Gradio for audio transcription and response generation based on OpenAI models.
@@ -42,35 +43,43 @@ Ensure you have the following prerequisites installed before using Yoda:
 
 ## Installation
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/fzinnah17/Yoda
+Clone the repository:
+`git clone https://github.com/fzinnah17/Yoda`
 
 Install the required dependencies:
-###
-pip install -r requirements.txt
-###
-env.py
-OPENAI_API_KEY = "your-api-key-here"
-Run Yoda, the Conversation Co-Pilot:
-python app.py
 
-Usage
+    pip install -r requirements.txt
+
+Set your Open AI API Key:
+
+    export OPENAI_API_KEY = "your-api-key-here"
+
+Run Yoda, the Conversation Co-Pilot:
+
+    python app.py
+
+## Usage
+
 Launch Yoda by running the provided command.
 Speak into the microphone to trigger audio transcription.
 Experience real-time, context-aware response generation based on workplace scenarios.
 
-python app.py
 
-Future Work
+## Future Work
+
 The future work for Yoda, the Conversation Co-Pilot, includes:
 
-Implementing a vector database to store entire conversations.
-Allowing the Language Model (LLM) to reference back to the stored conversations.
-Summarizing chat history and providing access to the most recent dialogue.
-Contributing
+ - Implementing a vector database to store entire conversations.
+ - Allowing the Language Model (LLM) to reference back to the stored conversations.
+ - Summarizing chat history and providing access to the most recent dialogue.
+
+
+
+
+## Contributing
+
 If you'd like to contribute to Yoda, the Conversation Co-Pilot, please follow the guidelines outlined in the CONTRIBUTING.md file.
 
-License
+## License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
