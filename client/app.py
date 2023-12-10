@@ -25,13 +25,13 @@ def main():
         # Mood Container
         col1, col2, col3 = st.columns(3)
         with col1:
-            st.image("point-image.png", caption="Point Image")
+            st.image("client/images/point-image.png", caption="Point Image")
         with col2:
             st.markdown("<p class='big-font'>Had a bad day? Trying to stay calm?</p>", unsafe_allow_html=True)
-            st.image("point-image-2.png")
+            st.image("client/images/point-image-2.png.png")
         with col3:
             st.markdown("<p class='big-font'>Pissed off by the landlord? And don’t know what to say?</p>", unsafe_allow_html=True)
-            st.image("point-image-3.png")
+            st.image("client/images/point-image-3.png.png")
 
         # Generate Response Button
         if st.button('Generate Response'):
@@ -42,7 +42,7 @@ def main():
         st.markdown("<p class='big-font'><span>Cornell</span> Mediator</p>", unsafe_allow_html=True)
 
     # Banner Content
-    st.image("banner-content-container.png")
+    # st.image("banner-content-container.png")
 
 if __name__ == "__main__":
     main()
