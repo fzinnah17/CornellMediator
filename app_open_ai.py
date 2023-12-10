@@ -3,7 +3,6 @@ from transformers import pipeline
 import numpy as np
 import os
 from openai import OpenAI
-from scripts.llm import create_emo_agent
 from env import OPENAI_API_KEY
 
 # client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
