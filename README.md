@@ -42,10 +42,10 @@ Ensure you have the following prerequisites installed before using Yoda:
 
 ## Installation
 
-1. Clone the repository:
+Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/app.py.git
+   git clone https://github.com/fzinnah17/Yoda
 ###
 
 Install the required dependencies:
