@@ -47,16 +47,26 @@ Clone the repository:
 `git clone https://github.com/fzinnah17/Yoda`
 
 Install the required dependencies:
-
-    pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 Set your Open AI API Key:
-
-    export OPENAI_API_KEY = "your-api-key-here"
+`export OPENAI_API_KEY = "your-api-key-here"`
 
 Run Yoda, the Conversation Co-Pilot:
+`python app.py`
 
-    python app.py
+
+## Demo
+
+
+Uploading Yoda - Conversation Copilot .mov…
+
+
+
+
+
+## Slide Deck
+[Pitch Deck](https://shorturl.at/ghnot "Pitch Deck")
 
 ## Usage
 
@@ -78,7 +88,7 @@ The future work for Yoda, the Conversation Co-Pilot, includes:
 
 ## Contributing
 
-If you'd like to contribute to Yoda, the Conversation Co-Pilot, please follow the guidelines outlined in the CONTRIBUTING.md file.
+If you like to contribute to Yoda, the Conversation Co-Pilot, please follow the guidelines outlined in the CONTRIBUTING.md file.
 
 ## License
 
