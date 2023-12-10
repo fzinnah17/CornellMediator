@@ -1,3 +1,4 @@
 .venv
-
+scripts/dummy_run.py
+scripts/cohere.py
 .env
