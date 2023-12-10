@@ -58,8 +58,9 @@ Run Yoda, the Conversation Co-Pilot:
 
 ## Demo
 
+https://github.com/fzinnah17/Yoda/assets/35609659/a1de4833-1239-44b2-9d6c-4a73cb595d54
 
-Uploading Yoda - Conversation Copilot .mov…
+
 
 
 
