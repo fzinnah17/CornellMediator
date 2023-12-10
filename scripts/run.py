@@ -3,9 +3,12 @@ from llm import create_emo_agent
 from transcribe import transcribe_audio
 
 # TODO
-background = "I am Morgan and have been working at IBM for the past 5 years Taylor joined the \
-        company 2 months back. I do not like Taylor because he keeps taking over tasks \
-        that are clearly mine and does not respect boundaries."
+background = """
+I am Morgan and have been working at IBM for the past 5 years Taylor joined the \
+company 2 months back. I do not like Taylor because he keeps taking over tasks \
+that are clearly mine and does not respect boundaries.
+"""
+
 conversation = create_emo_agent(background)
 
 def run(audio):
@@ -22,10 +25,23 @@ def run(audio):
     print(response)
     return response
 
-demo = gr.Interface(
-    run,
-    gr.Audio(sources=["microphone"]),
-    "text",
-)
+
+
+# demo = gr.Interface(
+#     fn=run,
+#     inputs=gr.Audio(sources=["microphone"]),
+#     outputs="text",
+# )
+
+with gr.Blocks(theme=gr.themes.Default(text_size=gr.themes.sizes.text_lg)) as demo:
+    audio = gr.Audio(label="What are they saying?", sources=['microphone'])
+    submit_btn = gr.Button("Enter")
+    output=gr.Textbox(label="Response", lines=8)
+
+    @submit_btn.click(inputs=audio, outputs=output)
+    def go(audio):
+        response = run(audio)
+        return response
+    submit_btn.click(fn=run, inputs=audio, outputs=output)
 
 demo.launch(share=True)
